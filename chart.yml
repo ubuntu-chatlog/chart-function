@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  ubulog-chart:
+    lang: node
+    handler: ./chart
+    image: ubulog/chart-function
